@@ -1,0 +1,328 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+body{
+    color: white;
+    scroll-behavior: smooth;
+}
+#main{
+    width: 100%;
+    min-height: 800px;
+}
+.about-intro{
+    margin-top: 30px;
+}
+.join{
+    background-color: #ff3f81;
+    width: fit-content;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+.join:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.joinus:hover{
+    background-color: #ff3f81;
+    color: white;
+    border-radius: 10px;
+}
+.nav-item{
+    position: relative;
+}
+.different::after{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 5px;
+    left: 50%;
+    bottom:0;
+    background-color: #ff3f81;
+    transition: all ease-in-out .2s;
+}
+  .different:hover::after{
+    width: 100%;
+    left: 0;
+}
+section{
+    min-height: 100vh;
+    overflow-x:hidden ;
+}
+.nav-link{
+    color: white;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+a:hover{
+    color: #ff3f81;
+}
+
+.intro{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #23153c;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #23153c;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #ff3f81;
+}
+
+.title{
+    font-family: 'Oleo Script', cursive;
+    font-size: xx-large;
+}
+.sub-title{
+    font-family: 'Itim', cursive;
+    font-size: larger;
+}
+
+.branding{
+    font: large;
+}
+
+.mouse_scroll {
+	display: block;
+	margin: 0 auto;
+	width: 24px;
+	height: 100px;
+	margin-top: 125px;
+}
+
+
+.m_scroll_arrows
+{
+  display: block;
+  width: 5px;
+  height: 5px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+   
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  margin: 0 0 3px 4px;
+  
+  width: 16px;
+  height: 16px;
+}
+
+
+.unu
+{
+  margin-top: 1px;
+}
+
+.unu, .doi, .trei
+{
+    -webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite;
+    animation: mouse-scroll 1s infinite;
+  
+}
+
+.unu
+{
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -webkit-animation-direction: alternate;
+  
+  animation-direction: alternate;
+  animation-delay: alternate;
+}
+
+.doi
+{
+  -webkit-animation-delay: .2s;
+  -moz-animation-delay: .2s;
+  -webkit-animation-direction: alternate;
+  
+  animation-delay: .2s;
+  animation-direction: alternate;
+  
+  margin-top: -6px;
+}
+
+.trei
+{
+  -webkit-animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  -webkit-animation-direction: alternate;
+  
+  animation-delay: .3s;
+  animation-direction: alternate;
+  
+  
+  margin-top: -6px;
+}
+
+.mouse {
+  height: 42px;
+  width: 24px;
+  border-radius: 14px;
+  transform: none;
+  border: 2px solid white;
+  top: 170px;
+}
+
+.wheel {
+  height: 5px;
+  width: 2px;
+  display: block;
+  margin: 5px auto;
+  background: white;
+  position: relative;
+  
+  height: 4px;
+  width: 4px;
+  border: 2px solid #fff;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+}
+
+.wheel {
+  -webkit-animation: mouse-wheel 0.6s linear infinite;
+  -moz-animation: mouse-wheel 0.6s linear infinite;
+  animation: mouse-wheel 0.6s linear infinite;
+}
+
+@-webkit-keyframes mouse-wheel{
+   0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+@-moz-keyframes mouse-wheel {
+  0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+@-o-keyframes mouse-wheel {
+
+   0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+@keyframes mouse-wheel {
+
+   0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+
+@-webkit-keyframes mouse-scroll {
+
+  0%   { opacity: 0;}
+  50%  { opacity: .5;}
+  100% { opacity: 1;}
+}
+@-moz-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@-o-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+
+.border-radius-50{
+    border-radius: 50%;
+}
+
+.team-name{
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.align-right{
+    text-align: right;
+    padding-right: 20px;
+}
+
+a{
+    color: white;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.navbar{
+    background: #23153c;
+}
+
+.align-center{
+    text-align: center !important;
+}
+
+th{
+    color: #ff3f81;
+}
+
+td{
+    color: white;
+    border: none;
+}
+.event-join{
+    background-color: #ff3f81;
+    width: fit-content;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.event-join:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.footer{
+    font-size: larger;
+}
+
+.table{
+    border: none;
+}
+
+tr{
+    border-top: hidden;
+}
