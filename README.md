@@ -1,6 +1,8 @@
 # scaler-discord-server-minihackathon
 
-Project made under Scaler in MiniHackathon. Single Person.
+Project made under Scaler in MiniHackathon. 
+
+Single Person Team. Name: AVS Aditya Vardhan
 
 Techstack - Django, VantaJS, Bootstrap4 
 
