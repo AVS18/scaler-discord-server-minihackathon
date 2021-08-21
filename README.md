@@ -21,6 +21,7 @@ Steps to run project:
 Admin Credentials: (Both Production and Dev)
 
 username : scaler
-password : scaler@1234
+
+password : interviewbit@1234
 
 In Production, I didnt give the delete option for tables just in case to handle misuse of site. You may be only seeing the data tables.
